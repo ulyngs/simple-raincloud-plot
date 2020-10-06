@@ -1,0 +1,92 @@
+participant_id,condition,intervention_period,mean_visits
+P1,Control,baseline,30.272727272727273
+P1,Control,intervention,25.818181818181817
+P10,No newsfeed,baseline,7.7
+P10,No newsfeed,intervention,12.285714285714286
+P12,No newsfeed,baseline,61.642857142857146
+P12,No newsfeed,intervention,61.357142857142854
+P15,Control,baseline,163.21428571428572
+P15,Control,intervention,121.07142857142857
+P17,Control,baseline,20.23076923076923
+P17,Control,intervention,28.214285714285715
+P18,Control,baseline,18.5
+P18,Control,intervention,14.272727272727273
+P19,Goal reminder,baseline,45.5
+P19,Goal reminder,intervention,10.615384615384615
+P2,Control,baseline,26.636363636363637
+P2,Control,intervention,36.9
+P20,No newsfeed,baseline,19.571428571428573
+P20,No newsfeed,intervention,16.285714285714285
+P21,Goal reminder,baseline,108.21428571428571
+P21,Goal reminder,intervention,139.5
+P22,No newsfeed,baseline,13.846153846153847
+P22,No newsfeed,intervention,17.5
+P23,Control,baseline,18.076923076923077
+P23,Control,intervention,17.214285714285715
+P24,Control,baseline,3.8
+P24,Control,intervention,12.4
+P25,Goal reminder,baseline,5.666666666666667
+P25,Goal reminder,intervention,2.8
+P26,No newsfeed,baseline,31.166666666666668
+P26,No newsfeed,intervention,23.214285714285715
+P28,No newsfeed,baseline,19.545454545454547
+P28,No newsfeed,intervention,13.923076923076923
+P30,Control,baseline,133.14285714285714
+P30,Control,intervention,96.78571428571429
+P31,Goal reminder,baseline,39.785714285714285
+P31,Goal reminder,intervention,9.818181818181818
+P32,Goal reminder,baseline,12.307692307692308
+P32,Goal reminder,intervention,14.928571428571429
+P33,Control,baseline,4.75
+P33,Control,intervention,6.222222222222222
+P34,Goal reminder,baseline,5.166666666666667
+P34,Goal reminder,intervention,4.857142857142857
+P36,Control,baseline,23
+P36,Control,intervention,27.25
+P37,No newsfeed,baseline,14.444444444444445
+P37,No newsfeed,intervention,18.083333333333332
+P39,No newsfeed,baseline,47.642857142857146
+P39,No newsfeed,intervention,54
+P4,Goal reminder,baseline,58.642857142857146
+P4,Goal reminder,intervention,30.928571428571427
+P40,Goal reminder,baseline,11.615384615384615
+P40,Goal reminder,intervention,3.4444444444444446
+P41,Goal reminder,baseline,19.214285714285715
+P41,Goal reminder,intervention,2.7777777777777777
+P42,No newsfeed,baseline,45.357142857142854
+P42,No newsfeed,intervention,40.57142857142857
+P44,No newsfeed,baseline,16.857142857142858
+P44,No newsfeed,intervention,22.071428571428573
+P45,Goal reminder,baseline,16.363636363636363
+P45,Goal reminder,intervention,4.2
+P47,No newsfeed,baseline,87.64285714285714
+P47,No newsfeed,intervention,79
+P48,Control,baseline,51.642857142857146
+P48,Control,intervention,50.857142857142854
+P49,Goal reminder,baseline,12.285714285714286
+P49,Goal reminder,intervention,9.538461538461538
+P5,Goal reminder,baseline,29.428571428571427
+P5,Goal reminder,intervention,29.357142857142858
+P50,Goal reminder,baseline,36.07692307692308
+P50,Goal reminder,intervention,21.428571428571427
+P51,Control,baseline,14.857142857142858
+P51,Control,intervention,9.818181818181818
+P52,Control,baseline,71.21428571428571
+P52,Control,intervention,71.92857142857143
+P53,Goal reminder,baseline,30.642857142857142
+P53,Goal reminder,intervention,21.846153846153847
+P54,No newsfeed,baseline,9.5
+P54,No newsfeed,intervention,15.714285714285714
+P55,No newsfeed,baseline,54.857142857142854
+P55,No newsfeed,intervention,56.09090909090909
+P56,No newsfeed,baseline,74.61538461538461
+P56,No newsfeed,intervention,57
+P57,Control,baseline,8.6
+P6,Goal reminder,baseline,64.92857142857143
+P6,Goal reminder,intervention,34.214285714285715
+P7,Control,baseline,11.454545454545455
+P7,Control,intervention,11.916666666666666
+P8,Control,baseline,6
+P8,Control,intervention,4.3
+P9,Control,baseline,41
+P9,Control,intervention,32.142857142857146

@@ -1,0 +1,35 @@
+---
+title: "example"
+author: "Ulrik Lyngs"
+date: "06/10/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+#remotes::install_github('erocoar/gghalves')
+library("gghalves")
+```
+
+# Example
+
+This is an example of how to make a box plot which also shows and connects data points, for a repeated measures experiment
+
+```{r}
+example_data <- read_csv("example_data.csv")
+
+example_data %>% 
+   ggplot(aes(x = intervention_period, y = mean_visits, color = condition)) +
+      geom_jitter(width = 0.1, height = 0.1, aes(alpha = 0.8)) +
+      geom_line(aes(group = participant_id), color = 'lightgray') +
+      geom_half_boxplot(data = example_data %>% filter(intervention_period == "baseline"),
+                        outlier.shape = NA, position = position_nudge(x = -.3),
+                        side = "r", center = TRUE, errorbar.draw = FALSE, width = .3) +
+      geom_half_boxplot(data = example_data %>% filter(intervention_period == "intervention"),
+                           outlier.shape = NA, position = position_nudge(x = .15),
+                           side = "r", center = TRUE, errorbar.draw = FALSE, width = .3) +
+      #geom_half_violin(position = position_nudge(x = -.3), side = "l") +
+      facet_wrap(~condition) +
+      guides(color = FALSE, alpha = FALSE)
+
+```
