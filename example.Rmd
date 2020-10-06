@@ -15,7 +15,10 @@ example_data <- read_csv("example_data.csv")
 
 # Example
 
-This is an example of how to make a box plot which also shows and connects data points, for a repeated measures experiment
+This is an example of how to make a box plot which also shows and connects data points, for a repeated measures experiment.
+
+Inspired by [RainCloud](https://github.com/RainCloudPlots/RainCloudPlots) plots.
+
 
 ## Basic visualisation
 ```{r}
