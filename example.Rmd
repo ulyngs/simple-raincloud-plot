@@ -52,3 +52,9 @@ example_data %>%
       guides(color = FALSE, alpha = FALSE)
 ```
 
+
+## Save out
+```{r}
+ggsave("example.png")
+```
+
