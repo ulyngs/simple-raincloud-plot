@@ -22,37 +22,37 @@ Inspired by [RainCloud](https://github.com/RainCloudPlots/RainCloudPlots) plots.
 
 ## Basic visualisation
 ```{r}
-example_data %>% 
-   ggplot(aes(x = intervention_period, y = mean_visits, color = condition)) +
-      geom_jitter(width = 0.075, height = 0.1, aes(alpha = 0.8)) +
-      geom_line(aes(group = participant_id)) +
-      geom_half_boxplot(data = example_data %>% filter(intervention_period == "baseline"),
-                        outlier.shape = NA, position = position_nudge(x = -.3),
-                        side = "r", center = TRUE, errorbar.draw = FALSE, width = .3) +
-      geom_half_boxplot(data = example_data %>% filter(intervention_period == "intervention"),
-                           outlier.shape = NA, position = position_nudge(x = .15),
-                           side = "r", center = TRUE, errorbar.draw = FALSE, width = .3) +
-      facet_wrap(~condition)
+ggplot(example_data %>% mutate(mean_visits = jitter(mean_visits)),
+  aes(x = intervention_period, y = mean_visits, color = condition)) +
+  geom_jitter(width = 0.03, aes(alpha = 0.7)) +
+  geom_line(aes(group = participant_id)) +
+  geom_half_boxplot(data = example_data %>% filter(intervention_period == "baseline"),
+                    outlier.shape = NA, position = position_nudge(x = -.3),
+                    side = "r", center = TRUE, errorbar.draw = FALSE, width = .3) +
+  geom_half_boxplot(data = example_data %>% filter(intervention_period == "intervention"),
+                    outlier.shape = NA, position = position_nudge(x = .15),
+                    side = "r", center = TRUE, errorbar.draw = FALSE, width = .3) +
+  facet_wrap(~condition)
 
 ```
 
 ## Prettier visualisation
 ```{r}
-example_data %>% 
-   ggplot(aes(x = intervention_period, y = mean_visits, color = condition)) +
-      geom_jitter(width = 0.075, height = 1, aes(alpha = 0.8)) +
-      geom_line(aes(group = participant_id), color = 'lightgray') +
-      geom_half_boxplot(data = example_data %>% filter(intervention_period == "baseline"),
-                        outlier.shape = NA, position = position_nudge(x = -.3),
-                        side = "r", center = TRUE, errorbar.draw = FALSE, width = .3) +
-      geom_half_boxplot(data = example_data %>% filter(intervention_period == "intervention"),
-                           outlier.shape = NA, position = position_nudge(x = .15),
-                           side = "r", center = TRUE, errorbar.draw = FALSE, width = .3) +
-      facet_wrap(~condition) +
-      labs(x ="", y = "") +
-      scale_color_manual(values=c("#26AC63", "#DF4F43", "black")) +
-      theme_minimal() +
-      guides(color = FALSE, alpha = FALSE)
+ggplot(example_data %>% mutate(mean_visits = jitter(mean_visits)),
+       aes(x = intervention_period, y = mean_visits, color = condition)) +
+  geom_jitter(width = 0.03, aes(alpha = 0.7)) +
+  geom_line(aes(group = participant_id), color = 'lightgray') +
+  geom_half_boxplot(data = example_data %>% filter(intervention_period == "baseline"),
+                    outlier.shape = NA, position = position_nudge(x = -.3),
+                    side = "r", center = TRUE, errorbar.draw = FALSE, width = .3) +
+  geom_half_boxplot(data = example_data %>% filter(intervention_period == "intervention"),
+                    outlier.shape = NA, position = position_nudge(x = .15),
+                    side = "r", center = TRUE, errorbar.draw = FALSE, width = .3) +
+  facet_wrap(~condition) +
+  labs(x ="", y = "") +
+  scale_color_manual(values=c("#26AC63", "#DF4F43", "black")) +
+  theme_minimal() +
+  guides(color = FALSE, alpha = FALSE)
 ```
 
 
